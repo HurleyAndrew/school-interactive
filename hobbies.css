@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200,300,400,500,700');
+
+body {
+    margin: 0px;
+    min-width: 100%;
+    background-color: rgba(203, 214, 226, 1);
+    height:1000px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+.navBar {
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index: 1;
+    /*animation-name: nav_deenlarge;
+    animation-duration: 1s;
+   transform: scale(1, 1);*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.logoImage{
+    height:40px;
+    width:auto;
+}
+.pageTitle{
+    color: black;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    display: block;
+    font-size: 7vw;
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    
+ 
+}
+.navItem {
+    line-height: 170%;
+    height: 50px;
+    width: 20%;
+    list-style-type: none;
+    float: left;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-right-style: inset;
+    border-right-width: 2px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 200;
+}
+
+.navIcon {
+    text-align: center;
+    line-height: 234%;
+}
+
+li:hover {
+    background-color: rgba(10, 100, 100, .5);
+}
+
+.articleSection {
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
+
+.articleMain {
+    height: 20vw;
+    width: 20vw;
+    background-color: rgba(203, 203, 203, 1);
+    overflow: hidden;
+    
+    
+}
+.topRightimage{
+    background-image: url(images/workshop_image.jpg);
+    background-size: cover;
+}
+.topLeftimage{
+    background-image: url(images/art_image.jpg);
+    background-size: cover;
+}
+.botRightimage{
+    background-image: url(images/programming_image.jpg);
+    background-size: cover;
+}
+.botLeftimage{
+    background-image: url(images/fencing_image.jpg);
+    background-size: cover;
+}
+.articleDesc {
+    position:absolute;
+    background-color: rgba(198, 81, 9, 1);
+    width: inherit;
+    height: 1.5vw;
+    overflow: hidden;
+    
+    
+    
+}
+.descDetails{
+    
+    font-size:20px;
+    color:white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 200;
+    visibility: hidden;
+    margin:1vw;
+    /*text-align: center;*/
+}
+
+.articleDesc:hover{
+    animation: expand_article;
+    animation-duration: 1.5s;
+    height: 20vw;
+    animation-timing-function: ease-out;
+}
+@keyframes expand_article{
+    from{height: 2vw;}
+    to{height: 20vw;}
+
+    
+}
+.descDetails:hover{
+    visibility: visible;
+}
+.designTitle{
+    margin-top: 4.5vw;
+    line-height: 12vw;
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+    color: white;
+    
+}
+.articleDesc:hover > .descDetails {
+    visibility: visible;
+}
+
+.topRightbox{
+    margin: auto;
+    margin-right:2vw; 
+    float:right;
+}
+.topLeftbox{
+    margin: auto;
+    margin-left:2vw; 
+    float:left;
+}
+.botRightbox{
+    margin: auto;
+    margin-right:2vw;
+    margin-top: 4vw;
+    float:right;
+}
+.botLeftbox{
+    margin: auto;
+    margin-left:2vw;
+    margin-top: 4vw;
+    float:left;
+}
+

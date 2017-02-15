@@ -1,0 +1,201 @@
+
+h1{
+    margin: 5px;
+    margin-top:15px;
+}
+p{
+   font-size:115%; 
+   margin: 5px;
+}
+.parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -99999;
+    background-image: url(images/programming_image_blur.jpg);
+}
+.aboveparallax{
+    margin:auto;
+    width:100%;
+    height: 2000px;
+    z-index: 1;
+    background: rgba(203, 203, 203, 1);
+}
+.phototitle{
+    color: black;
+    margin: auto;
+    padding-top: 7vw;
+    font-size: 10vw;
+   padding-bottom: 6vw;
+
+}
+/*
+.title{
+    color: black;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    display: block;
+    font-size: 7vw;
+    margin-top: 6vw;
+    margin-bottom: 1.5vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+}
+*/
+.sectionOne{
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin-bottom: 150px;
+    margin-top:50px;
+    animation: detranslate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(0px);
+}
+.sectionTwo{
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin-bottom: 150px;
+    animation: detranslate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(0px);
+}
+.sectionThree{
+    height: 200px;
+    width: 100%;
+    float: left;
+    animation: detranslate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(0px);
+
+}
+
+.contOne{
+    height: 35vw;
+    width: 35vw;
+    background:url(images/photography/IMG_158OP.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 32vw;
+}
+.contTwo{
+    height: 35vw;
+    width: 35vw;
+    background:url(images/photography/IMG_213OP.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 32vw;
+}
+.contThree{
+    height: 35vw;
+    width: 35vw;
+    background:url(images/photography/IMG_2679OP.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 32vw;
+}
+.descOne{
+    visibility: hidden;
+    width: 0px;
+    float: left;
+    background-color: white;
+    overflow:hidden;
+    height: 23.27vw;
+    visibility: visible;
+    animation: deexpand_article;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+.descTwo{
+    visibility: hidden;
+    width: 0px;
+    float: left;
+    background-color: white;
+    overflow:hidden;
+    height: 23.27vw;
+    visibility: visible;
+    animation: deexpand_article;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+.descThree{
+  visibility: hidden;
+    width: 0px;
+    float: left;
+    background-color: white;
+    overflow:hidden;
+    height: 23.27vw;
+    visibility: visible;
+    animation: deexpand_article;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+.sectionOne:hover > .descOne{
+    height: 23.27vw;
+    visibility: visible;
+    animation: expand_article;
+    animation-duration: 1.5s;
+    width: 30vw;
+    animation-timing-function: ease-out;
+}
+.sectionOne:hover{
+    animation: translate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(-300px);
+}
+.sectionTwo:hover{
+    animation: translate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(-300px);
+}
+.sectionThree:hover{
+    animation: translate_img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    transform: translate(-300px);
+}
+.sectionTwo:hover > .descTwo {
+   height: 23.27vw;
+    visibility: visible;
+    animation: expand_article;
+    animation-duration: 1.5s;
+    width: 30vw;
+    animation-timing-function: ease-out;
+}
+.sectionThree:hover > .descThree {
+    height: 23.27vw;
+    visibility: visible;
+    animation: expand_article;
+    animation-duration: 1.5s;
+    width: 30vw;
+    animation-timing-function: ease-out;
+}
+@keyframes expand_article{
+    from{width: 0vw;}
+    to{width: 30vw;}
+}
+@keyframes translate_img{
+    from{transform: translate(0px);}
+    to{transform: translate(-300px);}
+}
+@keyframes deexpand_article{
+    from{width: 30vw;}
+    to{width: 0vw;}
+}
+@keyframes detranslate_img{
+    from{transform: translate(-300px);}
+    to{transform: translate(0px);}
+}
+

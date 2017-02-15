@@ -1,0 +1,106 @@
+body{
+    height: 40vw;
+    background: url(images/programming_image_blur.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profileImage{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100vw;
+    background-image: url(images/profile_Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid black;
+    
+}
+.logoImage{
+    height:40px;
+    width:auto;
+}
+header{
+    margin: auto;
+    width:15vw;
+}
+
+.boxOne:hover{
+    opacity: .75;
+
+}
+.boxTwo:hover{
+    opacity: .75;
+}
+.boxThree:hover{
+    opacity: .75;
+}
+.boxOne{
+    height: 20vw;
+    width: 33.333vw;
+    background-color: rgba(203, 203, 203, 1);
+    float: left;
+    
+}
+.boxTwo{
+    
+    height: 20vw;
+    width: 33.333vw;
+    background-color: rgba(203, 214, 226, 1);
+    float: left;
+}
+.boxThree{
+   
+    height: 20vw;
+    width: 33.333vw;
+    background-color: rgba(203, 203, 203, 1);
+    float: left;
+}
+section{
+    margin: auto;
+    margin-top: 9vw;
+    width: auto;
+}
+footer{
+    margin: auto;
+    display: block;
+    height: 2.5vw;
+    width: 100vw;
+}
+p{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.hello{
+    margin-top:6vw;
+    background-color:rgba(0,0,0,0);
+    color:black;
+    font-size: 5vw;
+    margin-bottom: 0vw;
+}
+.nameis{
+    background-color:rgba(0,0,0,0);
+    color:black;
+    font-size: 3vw;
+    font-weight: 400;
+}
+.hobbieTitle{
+    
+    background-color:rgba(0,0,0,0);
+    color:black;
+    font-size: 3vw;
+}
+.photoTitle{
+    
+    background-color:rgba(0,0,0,0);
+    color:black;
+    font-size: 3vw;
+}
+.aboutTitle{
+    
+    background-color:rgba(0,0,0,0);
+    color:black;
+    font-size: 3vw;
+}
