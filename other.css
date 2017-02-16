@@ -21,7 +21,7 @@
 	width:100%;
 	height: 2000px;
 	z-index: 1;
-	background: rgba(203, 203, 203, 1);
+	background: rgba(233, 233, 233, 1);
 }
 .abouttitle{
   color: black;
@@ -30,4 +30,37 @@
     font-size: 10vw;
    padding-bottom: 6vw;
 
+}
+.basicskill{
+	background-color: red;
+	height: 10vw;
+	width: 10vw;
+	float: left;
+	margin: 5px;
+}
+.seccirc{
+	margin: auto;
+	width: 20vw;
+}
+.circle{
+	height: 20vw;
+	width: 20vw;
+	border-radius: 3000px;
+	background-color: red;
+	animation:comein;
+	animation-duration: 2s;
+}
+.skillarrange{
+	margin: auto;
+	width: 65%;
+}
+@keyframes comein{
+	from{transform: translate(-400px);}
+	to{transform:translate(0px);}
+		from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes fadein{
+	from{opacity: 0;}
+	to{opacity: 1;}
 }
