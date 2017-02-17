@@ -34,12 +34,11 @@
 
 }
 .basicskill{
-	background-color: red;
 	height: 10vw;
 	width: 10vw;
 	float: left;
 	margin: 5px;
-	border-radius: 10px;
+	border-radius: 1vw;
 }
 .basicskill:hover{
 	animation:rotate;
@@ -84,4 +83,24 @@
 	to{
 		transform: rotate(720deg);
 	}
+}
+.photoshop{
+    background-image: url(images/photoshop_icon.svg);
+    background-size: cover;
+}
+.lightroom{
+	background-image: url(images/lightroom_icon.svg);
+    background-size: cover;
+}
+.illustrator{
+	background-image: url(images/illustrator_icon.svg);
+    background-size: cover;
+}
+.aftereffects{
+	background-image: url(images/aftereffects_icon.svg);
+    background-size: cover;
+}
+.dreamweaver{
+	background-image: url(images/dreamweaver_icon.svg);
+    background-size: cover;
 }
