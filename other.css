@@ -41,6 +41,9 @@
 .aboutpara{
 
 }
+p{
+	background-color: white;
+}
 .basicskill{
 	height: 10vw;
 	width: 10vw;
