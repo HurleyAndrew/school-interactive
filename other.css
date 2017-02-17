@@ -13,8 +13,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 	text-align: center;
-	z-index: -99999;
-	background-image: url(images/programming_image_blur.jpg);
+	z-index: -9999;
+	background-image: url(images/school_repeat.png);
+
+	
 }
 .aboveparallax{
 	margin:auto;
@@ -24,6 +26,7 @@
 	background: rgba(233, 233, 233, 1);
 	animation:comein;
 	animation-duration: 2s;
+	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.20);
 }
 .abouttitle{
   color: black;
@@ -31,6 +34,11 @@
     padding-top: 7vw;
     font-size: 10vw;
    padding-bottom: 6vw;
+   animation:comein;
+	animation-duration: 2s;
+
+}
+.aboutpara{
 
 }
 .basicskill{
@@ -38,11 +46,15 @@
 	width: 10vw;
 	float: left;
 	margin: 5px;
-	border-radius: 1vw;
+}
+.skilltitle{
+	margin-left: 10vw;
+	font-size: 5vw;
 }
 .basicskill:hover{
 	animation:rotate;
-	animation-duration: 2s;
+	animation-duration: .5s;
+	transform: rotate(20deg)
 }
 .seccirc{
 	margin: auto;
@@ -56,7 +68,7 @@
 	background-color: red;
 	animation:comein;
 	animation-timing-function: ease-in-out;
-	animation-duration: 1.5s;
+	animation-duration: 2s;
 }
 .skillarrange{
 	margin: auto;
@@ -81,7 +93,7 @@
 		transform: rotate(0deg);
 	}
 	to{
-		transform: rotate(720deg);
+		transform: rotate(20deg);
 	}
 }
 .photoshop{
@@ -103,4 +115,56 @@
 .dreamweaver{
 	background-image: url(images/dreamweaver__icon.svg);
     background-size: cover;
+}
+.html_icon{
+	background-image: url(images/html_icon.png);
+    background-size: cover;
+}
+
+.css_icon{
+	background-image: url(images/css_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*modal information and structures*/
+
+.modal-window{
+	height: 20vw;
+	width:30vw;
+	position: fixed;
+	z-index: 3;
+	top: 20vw;
+	left: 40vw;
+	display: none;
+	overflow:hidden;
+
+}
+
+.photoshop:active ~ .modal-window{
+	display:block;
+	background-color: white;
+	
+}
+.lightroom:active ~ .modal-window{
+		display:block;
+	background-color: white;
+}.illustrator:active ~ .modal-window{
+	display:block;
+	background-color: white;
+}.aftereffects:active ~ .modal-window{
+		display:block;
+	background-color: white;
+}.dreamweaver:active ~ .modal-window{
+	display:block;
+	background-color: white;
+}
+.html_icon:active ~ .modal-window{
+	display:block;
+	background-color: white;
+}
+.css_icon:active ~ .modal-window{
+		display:block;
+	background-color: white;
 }
