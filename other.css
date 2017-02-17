@@ -22,6 +22,8 @@
 	height: 2000px;
 	z-index: 1;
 	background: rgba(233, 233, 233, 1);
+	animation:comein;
+	animation-duration: 2s;
 }
 .abouttitle{
   color: black;
@@ -37,10 +39,16 @@
 	width: 10vw;
 	float: left;
 	margin: 5px;
+	border-radius: 10px;
+}
+.basicskill:hover{
+	animation:rotate;
+	animation-duration: 2s;
 }
 .seccirc{
 	margin: auto;
 	width: 20vw;
+	transform: translateY(3vw);
 }
 .circle{
 	height: 20vw;
@@ -48,19 +56,32 @@
 	border-radius: 3000px;
 	background-color: red;
 	animation:comein;
-	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
 }
 .skillarrange{
 	margin: auto;
 	width: 65%;
 }
+
 @keyframes comein{
-	from{transform: translate(-400px);}
-	to{transform:translate(0px);}
-		from{opacity: 0;}
-	to{opacity: 1;}
+	from
+	{
+		transform: translate(-400px);
+		opacity: 0;
+	}
+
+	to
+	{
+		transform:translate(0px);
+		opacity: 1;
+	}
 }
-@keyframes fadein{
-	from{opacity: 0;}
-	to{opacity: 1;}
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(720deg);
+	}
 }
