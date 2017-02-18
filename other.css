@@ -1,12 +1,7 @@
 
-.descsect{
-	
-}
-.skillssect{
-	
-}
-.edusect{
-	
+.clearfix{
+	content: " ";
+	clear: both;
 }
 .parallax{
 	background-attachment: fixed;
@@ -14,19 +9,19 @@
 	background-size: cover;
 	text-align: center;
 	z-index: -9999;
-	background-image: url(images/school_repeat.png);
-
+	background-image: url(images/about_pattern.png);
+	background-size: cover;
 	
 }
 .aboveparallax{
 	margin:auto;
 	width:100vw;
-	height: 2000px;
+	height: 3000px;
 	z-index: 1;
-	background: rgba(233, 233, 233, 1);
+	background: rgb(42, 40, 58);
 	animation:comein;
 	animation-duration: 2s;
-	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.20);
+	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.30);
 }
 .abouttitle{
 	color: black;
@@ -39,7 +34,14 @@
 
 }
 .aboutpara{
-
+ text-align: center;
+ margin: 5vw;
+ margin-bottom: 10vw;
+ margin-left: 20vw;
+ margin-right: 20vw;  
+ color: white;
+ font-size: 1.5vw;
+ font-weight: 100;
 }
 .basicskill{
 	height: 10vw;
@@ -49,13 +51,34 @@
 }
 .skilltitle{
 	margin-left: 10vw;
-	font-size: 5vw;
-	background-color: red;
-	height: 14vw;
-	width: 16vw;
+	font-size: 2.7vw;
+	background-color: #FB5748;
+	height: 6.5vw;
+	width: 26vw;
 	text-align: center;
 	top: 7vw;
+	box-shadow: -.5vw -.5vw 0px 0px #F93026;
+	color: white;
+	margin-bottom: 4vw;
 }
+.educationtitle{
+	margin-left: 10vw;
+	margin-top: 20vw;
+	font-size: 2.7vw;
+	background-color: #FB5748;
+	height: 6.5vw;
+	width: 26vw;
+	text-align: center;
+	box-shadow: -.5vw -.5vw 0px 0px #F93026;
+	color: white;
+	
+}
+.edu_content{
+	margin-left: 14vw;
+	color: white;
+	font-size: 1.75vw;
+}
+
 .basicskill:hover{
 	animation:rotate;
 	animation-duration: .5s;
@@ -74,6 +97,11 @@
 	animation:comein;
 	animation-timing-function: ease-in-out;
 	animation-duration: 2s;
+	background-image:url(images/about_profile.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -50px;
+	border: white 5px solid;
 }
 .skillarrange{
 	margin: auto;
@@ -137,17 +165,29 @@
 .modal-title{
 	font-size: 3vw;
 	text-align: center;
+	background-color: black;
+	color: white;
+	font-weight: 300;
+	margin: 0;
+	top:0;
+	bottom:0;
 }
 .modal-content{
+	height: 16vw;
 	font-size: 1.5vw;
 	padding:1vw;
-	background-color: grey;
-	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.25);
+	background-color: #466AB0;
+	margin: 0;
+	top:0;
+	bottom:0;
+	color: white;
+	font-weight: 100;
+
 }
 .modal-window-photo, .modal-window-lightroom,.modal-window-illustrator,
 .modal-window-aftereffects,.modal-window-dreamweaver,
 .modal-window-html,.modal-window-css {
-	height: 20vw;
+	height: 16vw;
 	width:30vw;
 	position: fixed;
 	z-index: 3;
@@ -155,7 +195,9 @@
 	left: 40vw;
 	display: none;
 	overflow:hidden;
-	border-radius: 1vw;
+	border-radius: 1.15vw;
+	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.55);
+	border: .2vw white inset;
 
 }
 .photoshop:hover ,.lightroom:hover,.aftereffects:hover ,.dreamweaver:hover,.html_icon:hover ,
@@ -170,23 +212,26 @@
 .lightroom:active ~ .modal-window-lightroom{
 	display:block;
 	background-color: white;
-	}.illustrator:active ~ .modal-window-illustrator{
-		display:block;
-		background-color: white;
-		}.aftereffects:active ~ .modal-window-aftereffects{
-			display:block;
-			background-color: white;
-			}.dreamweaver:active ~ .modal-window-dreamweaver{
-				display:block;
-				background-color: white;
-			}
-			.html_icon:active ~ .modal-window-html{
-				display:block;
-				background-color: white;
-			}
-			.css_icon:active ~ .modal-window-css{
-				display:block;
-				background-color: white;
-			}
-			/*end modal content*/
+}
+.illustrator:active ~ .modal-window-illustrator{
+	display:block;
+	background-color: white;
+}
+.aftereffects:active ~ .modal-window-aftereffects{
+	display:block;
+	background-color: white;
+}
+.dreamweaver:active ~ .modal-window-dreamweaver{
+	display:block;
+	background-color: white;
+}
+.html_icon:active ~ .modal-window-html{
+	display:block;
+	background-color: white;
+}
+.css_icon:active ~ .modal-window-css{
+	display:block;
+	background-color: white;
+}
+/*end modal content*/
 
