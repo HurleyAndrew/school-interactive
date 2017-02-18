@@ -10,8 +10,8 @@
 }
 .parallax{
 	background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
 	z-index: -9999;
 	background-image: url(images/school_repeat.png);
@@ -20,7 +20,7 @@
 }
 .aboveparallax{
 	margin:auto;
-	width:100%;
+	width:100vw;
 	height: 2000px;
 	z-index: 1;
 	background: rgba(233, 233, 233, 1);
@@ -29,20 +29,17 @@
 	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.20);
 }
 .abouttitle{
-  color: black;
-    margin: auto;
-    padding-top: 7vw;
-    font-size: 10vw;
-   padding-bottom: 6vw;
-   animation:comein;
+	color: black;
+	margin: auto;
+	padding-top: 7vw;
+	font-size: 10vw;
+	padding-bottom: 6vw;
+	animation:comein; 
 	animation-duration: 2s;
 
 }
 .aboutpara{
 
-}
-p{
-	background-color: white;
 }
 .basicskill{
 	height: 10vw;
@@ -53,11 +50,16 @@ p{
 .skilltitle{
 	margin-left: 10vw;
 	font-size: 5vw;
+	background-color: red;
+	height: 14vw;
+	width: 16vw;
+	text-align: center;
+	top: 7vw;
 }
 .basicskill:hover{
 	animation:rotate;
 	animation-duration: .5s;
-	transform: rotate(20deg)
+	transform: rotate(10deg)
 }
 .seccirc{
 	margin: auto;
@@ -75,7 +77,7 @@ p{
 }
 .skillarrange{
 	margin: auto;
-	width: 65%;
+	width: 75vw;
 }
 
 @keyframes comein{
@@ -96,78 +98,95 @@ p{
 		transform: rotate(0deg);
 	}
 	to{
-		transform: rotate(20deg);
+		transform: rotate(10deg);
 	}
 }
 .photoshop{
-    background-image: url(images/photoshop_icon.svg);
-    background-size: cover;
+	background-image: url(images/photoshop_icon.svg);
+	background-size: cover;
 }
 .lightroom{
 	background-image: url(images/lightroom_icon.svg);
-    background-size: cover;
+	background-size: cover;
 }
 .illustrator{
 	background-image: url(images/illustrator_icon.svg);
-    background-size: cover;
+	background-size: cover;
 }
 .aftereffects{
 	background-image: url(images/aftereffects_icon.svg);
-    background-size: cover;
+	background-size: cover;
 }
 .dreamweaver{
 	background-image: url(images/dreamweaver__icon.svg);
-    background-size: cover;
+	background-size: cover;
 }
 .html_icon{
 	background-image: url(images/html_icon.png);
-    background-size: cover;
+	background-size: cover;
 }
 
 .css_icon{
 	background-image: url(images/css_icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 
 /*modal information and structures*/
-
-.modal-window{
+.modal-title{
+	font-size: 3vw;
+	text-align: center;
+}
+.modal-content{
+	font-size: 1.5vw;
+	padding:1vw;
+	background-color: grey;
+	box-shadow:  2px -1px 20px 10px rgba(0,0,0,0.25);
+}
+.modal-window-photo, .modal-window-lightroom,.modal-window-illustrator,
+.modal-window-aftereffects,.modal-window-dreamweaver,
+.modal-window-html,.modal-window-css {
 	height: 20vw;
 	width:30vw;
 	position: fixed;
 	z-index: 3;
-	top: 20vw;
+	top: 15vw;
 	left: 40vw;
 	display: none;
 	overflow:hidden;
+	border-radius: 1vw;
 
 }
-
-.photoshop:active ~ .modal-window{
+.photoshop:hover ,.lightroom:hover,.aftereffects:hover ,.dreamweaver:hover,.html_icon:hover ,
+.css_icon:hover,.illustrator:hover{
+	cursor: pointer;
+}
+.photoshop:active ~ .modal-window-photo{
 	display:block;
 	background-color: white;
 	
 }
-.lightroom:active ~ .modal-window{
-		display:block;
-	background-color: white;
-}.illustrator:active ~ .modal-window{
+.lightroom:active ~ .modal-window-lightroom{
 	display:block;
 	background-color: white;
-}.aftereffects:active ~ .modal-window{
+	}.illustrator:active ~ .modal-window-illustrator{
 		display:block;
-	background-color: white;
-}.dreamweaver:active ~ .modal-window{
-	display:block;
-	background-color: white;
-}
-.html_icon:active ~ .modal-window{
-	display:block;
-	background-color: white;
-}
-.css_icon:active ~ .modal-window{
-		display:block;
-	background-color: white;
-}
+		background-color: white;
+		}.aftereffects:active ~ .modal-window-aftereffects{
+			display:block;
+			background-color: white;
+			}.dreamweaver:active ~ .modal-window-dreamweaver{
+				display:block;
+				background-color: white;
+			}
+			.html_icon:active ~ .modal-window-html{
+				display:block;
+				background-color: white;
+			}
+			.css_icon:active ~ .modal-window-css{
+				display:block;
+				background-color: white;
+			}
+			/*end modal content*/
+
