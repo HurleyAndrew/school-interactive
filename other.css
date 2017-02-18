@@ -73,6 +73,18 @@
 	color: white;
 	
 }
+.socialtitle{
+	margin-left: 10vw;
+	margin-top: 6vw;
+	font-size: 2.7vw;
+	background-color: #FB5748;
+	height: 6.5vw;
+	width: 26vw;
+	text-align: center;
+	box-shadow: -.5vw -.5vw 0px 0px #F93026;
+	color: white;
+}
+
 .edu_content{
 	margin-left: 14vw;
 	color: white;
@@ -159,7 +171,33 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-
+.behance{
+	background-image: url(images/Behance.svg);
+	background-size: cover;
+}
+.facebook{
+	background-image: url(images/Facebook.svg);
+	background-size: cover;
+}
+.github{
+	background-image: url(images/Github.svg);
+	background-size: cover;
+}
+.instagram{
+	background-image: url(images/Instagram.svg);
+	background-size: cover;
+}
+.linkedin{
+	background-image: url(images/Linkedin.svg);
+	background-size: cover;
+}
+.behance, .facebook, .github, .instagram, .linkedin{
+	cursor: pointer;
+}
+.socialarrange{
+	margin-left: 12vw;
+	margin-top: 4vw;
+}
 
 /*modal information and structures*/
 .modal-title{
