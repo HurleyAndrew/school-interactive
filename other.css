@@ -9,7 +9,7 @@
 	background-size: cover;
 	text-align: center;
 	z-index: -9999;
-	background-image: url(images/about_pattern.png);
+	background-image: url(images/about_pattern.svg);
 	background-size: cover;
 	
 }
@@ -112,7 +112,7 @@
 	background-image:url(images/about_profile.jpg); 
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -50px;
+	background-position: -5vw;
 	border: white 5px solid;
 }
 .skillarrange{
