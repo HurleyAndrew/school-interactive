@@ -12,11 +12,11 @@ body{
     height: 15vw;
     width: 15vw;
     border-radius: 100vw;
-    background-image: url(images/profile_Image.jpg);
+    background-image: url(images/profile_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 5px solid black;
+    border: 5px solid white;
      animation:comein;
     animation-duration: 1.75s;
     

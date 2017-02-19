@@ -72,107 +72,66 @@ a {
 li:hover {
     background-color: rgba(10, 100, 100, .5);
 }
-
-.articleSection {
-    margin: auto;
-    width: 60%;
-    height: auto;
+.parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -99999;
+    background-image: url(images/about_pattern.png);
 }
+.aboveparallax{
+    margin:auto;
+    width:100%;
+    height: 2000px;
+    z-index: 1;
+    background: rgb(42, 40, 58);
+    animation:comein;
+    animation-duration: 2s;
+     }
+    .hobbytitle{
+    color: black;
+    margin: auto;
+    padding-top: 7vw;
+    font-size: 10vw;
+   padding-bottom: 6vw;
+   animation:comein;
+    animation-duration: 2s;
 
-.articleMain {
+}
+.hobbyarrangement{
+    height: 2000px;
+    width: 90%;
+}
+.fencingbox{
+    margin-left: 10vw;
+    transform:translateY(5vw);
     height: 20vw;
     width: 20vw;
-    background-color: rgba(203, 203, 203, 1);
-    overflow: hidden;
-    
-    
+    background-color: red;
+    box-shadow: -.5vw -.5vw 0px 0px #F0E161;
 }
-.topRightimage{
-    background-image: url(images/workshop_image.jpg);
-    background-size: cover;
-}
-.topLeftimage{
-    background-image: url(images/art_image.jpg);
-    background-size: cover;
-}
-.botRightimage{
-    background-image: url(images/programming_image.jpg);
-    background-size: cover;
-}
-.botLeftimage{
-    background-image: url(images/fencing_image.jpg);
-    background-size: cover;
-}
-.articleDesc {
-    position:absolute;
-    background-color: rgba(198, 81, 9, 1);
-    width: inherit;
-    height: 1.5vw;
-    overflow: hidden;
-    
-    
-    
-}
-.descDetails{
-    
-    font-size:20px;
-    color:white;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-weight: 200;
-    visibility: hidden;
-    margin:1vw;
-    /*text-align: center;*/
-}
-
-.articleDesc:hover{
-    animation: expand_article;
-    animation-duration: 1.5s;
-    height: 20vw;
-    animation-timing-function: ease-out;
-}
-@keyframes expand_article{
-    from{height: 2vw;}
-    to{height: 20vw;}
-
-    
-}
-.descDetails:hover{
-    visibility: visible;
-}
-.designTitle{
-    margin-top: 4.5vw;
-    line-height: 12vw;
-    text-align: center;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 3.5vw;
+.fencingcontent{
+    margin-top: -14vw;
+    margin-left: 35vw;
+    width: 45%;
+    font-size: 1.5vw;
     color: white;
-    
 }
-.articleDesc:hover > .descDetails {
-    visibility: visible;
+.fencingtitle{
+font-size: 4vw;
 }
+@keyframes comein{
+    from
+    {
+        transform: translate(-400px);
+        opacity: 0;
+    }
 
-.topRightbox{
-    margin: auto;
-    margin-right:2vw; 
-    float:right;
-}
-.topLeftbox{
-    margin: auto;
-    margin-left:2vw; 
-    float:left;
-}
-.botRightbox{
-    margin: auto;
-    margin-right:2vw;
-    margin-top: 4vw;
-    float:right;
-}
-.botLeftbox{
-    margin: auto;
-    margin-left:2vw;
-    margin-top: 4vw;
-    float:left;
+    to
+    {
+        transform:translate(0px);
+        opacity: 1;
+    }
 }
 

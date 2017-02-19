@@ -21,7 +21,7 @@ p{
     height: 2000px;
     z-index: 1;
     background: rgb(42, 40, 58);
-    animation:comein;
+   animation:comein;
     animation-duration: 2s;
 }
 .phototitle{
