@@ -52,16 +52,17 @@ header{
 .boxOne{
     margin: 1vw;
     height: 30vw;
-    width: 30vw;
+    width: 29vw;
     background-color: #32A0BA;
     box-shadow: -.5vw -.5vw 0px 0px #226B7D;
     float: left;
+    
     
 }
 .boxTwo{
     margin: 1vw;
     height: 30vw;
-    width: 30vw;
+    width: 29vw;
     background-color: #32A0BA;
     box-shadow: 0vw -.4vw 0px .15vw #226B7D;
     float: left;
@@ -69,14 +70,14 @@ header{
 .boxThree{
    margin: 1vw;
     height: 30vw;
-    width: 30vw;
+    width: 29vw;
     background-color: #32A0BA;
     box-shadow: .5vw -.5vw 0px 0px #226B7D;
     float: left;
 }
 .boxarrangement{
     margin:auto;
-    width: 96.5%;
+    width: 95vw;
     margin-bottom: 0;
 }
 section{
